@@ -11,7 +11,7 @@ CONTAINER_NAME=$1
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 DUMP_DIR="/home/dumps"
 TARGET_DIR="${DUMP_DIR}/${TIMESTAMP}"
-LOCAL_DIR="/path/to/local/mongo_backups"
+LOCAL_DIR="/root/backups"
 
 # Step 1: Create a timestamped directory in /home/dumps
 docker exec "$CONTAINER_NAME" mkdir -p "$TARGET_DIR"
